@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Montserrat";
+  src: url("../src/fonts/montserrat-regular.woff2") format("woff2"),
+  url("../src/fonts/montserrat-regular.woff") format("woff"),
+  url("../src/fonts/montserrat-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+main {
+  background-color: #985ACE;
+}
+
+.container {
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+.form {
+  margin: auto;
+  padding: 50px;
+  width: 320px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  background-color: #fff;
+  border-radius: 30px;
+  border-style: none;
+}
+
+.form__heading {
+  font-size: 26px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.form__label {
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.form__input {
+  font-size: 14px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  background-color: #F8F1FF;
+  color: #000;
+  border-style: none;
+}
+
+.form__button {
+margin: 25px 0 15px;
+ padding: 13px 0;
+ font-family: "Montserrat";
+ font-size: 14px;
+ color: #fff;
+ border-radius: 7px;
+ border-style: none;
+ background-color: #985ACE;
+ cursor: pointer;
+}
+
+.form__link {
+  text-align: center;
+  font-size: 14px;
+  color: #985ACE;
+}
+
+@media screen and (max-width: 1024px) {
+.container {
+  max-width: 900px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 700px;
+    }
+  }
+
+@media screen and (max-width: 475px) {
+  .container {
+    max-width: 425px;
+    }
+
+    .form {
+      padding: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 345px;
+    }
+  }
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 345px;
+    }
+  }
