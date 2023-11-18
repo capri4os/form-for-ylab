@@ -24,7 +24,6 @@ main {
   justify-content: center;
 }
 
-
 .form {
   margin: auto;
   padding: 50px;
@@ -58,6 +57,8 @@ main {
   background-color: #F8F1FF;
   color: #000;
   border-style: none;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 .form__button {
